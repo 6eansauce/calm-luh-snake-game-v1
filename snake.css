@@ -1,0 +1,40 @@
+html {
+	--canvas-background-size: 60px 60px;
+	--canvas-background-position: 0 0, 30px 0, 30px -30px, 0px 30px;
+}
+
+body {
+	text-align: center;
+	background-color: #efedea;
+}
+
+canvas {
+	background-color: #505050;
+	background-image:
+      linear-gradient(45deg, #404040 25%, transparent 25%), 
+      linear-gradient(135deg, #404040 25%, transparent 25%),
+      linear-gradient(45deg, transparent 75%, #404040 75%),
+      linear-gradient(135deg, transparent 75%, #404040 75%);
+	background-size: var(--canvas-background-size);
+	background-position: var(--canvas-background-position);
+}
+
+#gameMenu {
+	padding-top: 10px;
+}
+
+#gameMenu button {
+	min-width: 80px;
+	max-width: 80px;
+	height: 40px;
+}
+
+#gameSettings {
+	padding-top: 10px;
+}
+
+#gameSettings fieldset {
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 450px;
+}

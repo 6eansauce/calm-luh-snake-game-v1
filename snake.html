@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Snake Game</title>
+	<link rel="stylesheet" href="snake.css">
+	<script src="snake.js"></script> 
+</head>
+<body>
+	<h1 class="gameTitle">Snake</h1>
+	<h6 class="gameAuthor">by 6eansauce</h6>
+	<div class="gameContainer">
+		<canvas id="gameCanvas" width="450" height="450">
+			
+		</canvas>
+
+		<div id="gameMenu">
+			<button onclick="runGameLoop()">PLAY</button>
+			<button onclick="showSettings()">SETTINGS</button>	
+		</div>
+
+		<div id="gameSettings" style="display: none;">
+			<fieldset>
+				<legend>Snake Color</legend>
+                    <input type="radio" id="setSnakeColor0" name="setSnakeColor" onclick="setSnakeColor(this)" checked>
+                    <label for="setSnakeColor0">Jungle Snake</label>
+                    <input type="radio" id="setSnakeColor1" name="setSnakeColor" onclick="setSnakeColor(this)">
+                    <label for="setSnakeColor1">Garden Snake</label>
+                    <input type="radio" id="setSnakeColor2" name="setSnakeColor" onclick="setSnakeColor(this)">
+                    <label for="setSnakeColor2">Desert Snake</label>
+			</fieldset>
+
+			<fieldset>
+				<legend>Snake Speed</legend>
+                    <input type="radio" id="setSnakeSpeed0" name="setSnakeSpeed" onclick="setSnakeSpeed(this)" checked>
+                    <label for="setSnakeSpeed0">Default</label>
+                    <input type="radio" id="setSnakeSpeed1" name="setSnakeSpeed" onclick="setSnakeSpeed(this)">
+                    <label for="setSnakeSpeed1">Slow</label>
+                    <input type="radio" id="setSnakeSpeed2" name="setSnakeSpeed" onclick="setSnakeSpeed(this)">
+                    <label for="setSnakeSpeed2">Fast</label>
+			</fieldset>
+
+			<fieldset>
+                    <legend>Habitat Size</legend>
+                    <input type="radio" id="setHabitatSize0" name="setHabitatSize" onclick="setHabitatSize(this)" checked>
+                    <label for="setHabitatSize0">Default</label>
+                    <input type="radio" id="setHabitatSize1" name="setHabitatSize" onclick="setHabitatSize(this)">
+                    <label for="setHabitatSize1">Small</label>
+                    <input type="radio" id="setHabitatSize2" name="setHabitatSize" onclick="setHabitatSize(this)">
+                    <label for="setHabitatSize2">Big</label>
+            </fieldset>
+		</div>
+
+	</div>
+</body>
+</html>
